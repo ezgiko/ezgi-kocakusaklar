@@ -1,28 +1,144 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Psikolog Ezgi Kocakuşaklar | Coming Soon</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Psikolog Ezgi Kocakuşaklar</title>
+  <meta name="description" content="Psikolog Ezgi Kocakuşaklar – Klinik psikoloji, danışmanlık ve yabancı dil kaygısı üzerine çalışmalar.">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Open Graph / Social Cards -->
+  <meta property="og:title" content="Psikolog Ezgi Kocakuşaklar">
+  <meta property="og:description" content="Klinik psikoloji, danışmanlık ve yabancı dil kaygısı üzerine.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ezgikocakusaklar.com/">
+  <meta property="og:image" content="/images/og-cover.jpg">
   <style>
-    body {
-      background: #0b0c10;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-      text-align: center;
+    :root{
+      --bg:#ffffff; --text:#0f172a; --muted:#475569; --card:#f8fafc; --line:#e2e8f0; --accent:#0ea5e9; --accent-2:#22c55e;
+      --radius:18px;
     }
-    h1 {
-      font-size: 2rem;
-      font-weight: 500;
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{opacity:.9}
+    .container{max-width:1040px;margin:0 auto;padding:28px}
+    header{display:flex;justify-content:space-between;align-items:center}
+    .brand{font-weight:700;letter-spacing:.2px}
+    nav{display:flex;gap:16px}
+    nav a{padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:#fff}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:28px;margin:32px 0}
+    .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius)}
+    .p24{padding:24px}
+    h1{font-size:36px;line-height:1.15;margin:0 0 12px}
+    p{color:var(--muted);line-height:1.75}
+    .cta{display:flex;gap:12px;margin-top:16px;flex-wrap:wrap}
+    .btn{border:1px solid var(--line);padding:12px 16px;border-radius:12px;display:inline-flex;gap:10px;align-items:center;font-weight:600;background:#fff}
+    .btn.primary{background:var(--accent);color:#fff;border-color:transparent}
+    .photo{aspect-ratio:1/1;border-radius:16px;overflow:hidden;border:1px solid var(--line);background:#fff;display:flex;align-items:center;justify-content:center}
+    .photo img{width:100%;height:100%;object-fit:cover}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:22px;margin-top:24px}
+    .col-8{grid-column:span 8}
+    .col-4{grid-column:span 4}
+    .list{display:grid;gap:12px;margin:0;padding:0;list-style:none}
+    .item{padding:14px;border:1px solid var(--line);border-radius:14px;background:#fff}
+    .item h3{margin:0 0 6px;font-size:16px}
+    footer{text-align:center;margin:40px 0 12px;color:var(--muted);font-size:14px}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .col-8,.col-4{grid-column:span 12}
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Ezgi Kocakuşaklar",
+    "jobTitle":"Psikolog",
+    "url":"https://ezgikocakusaklar.com/",
+    "email":"mailto:ornek@mail.com",
+    "sameAs":["https://www.linkedin.com/","https://www.instagram.com/"]
+  }
+  </script>
 </head>
 <body>
-  <h1>Psikolog Ezgi Kocakuşaklar<br>Coming Soon 🚀</h1>
+  <div class="container">
+    <header>
+      <div class="brand">Psikolog Ezgi Kocakuşaklar</div>
+      <nav>
+        <a href="#hakkimda">Hakkımda</a>
+        <a href="#calisma">Çalışma Alanları</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card p24">
+        <h1>Merhaba, ben Ezgi.</h1>
+        <p>
+          Klinik psikoloji ve yetişkinlerde <strong>yabancı dil kaygısı</strong> üzerine çalışıyorum. BDT temelli
+          yaklaşımla danışanlarıma eşlik ediyor, araştırma ve içerikler üretiyorum.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#iletisim">Randevu / İletişim</a>
+          <a class="btn" href="#yazilar">Yazılar</a>
+          <a class="btn" href="/files/cv.pdf" download>CV</a>
+        </div>
+      </div>
+      <div class="card p24">
+        <div class="photo">
+          <!-- Fotoğrafını /images/ezgi.jpg olarak yükle, aşağıdaki src'yi güncelle -->
+          <img src="/images/ezgi.jpg" alt="Psikolog Ezgi Kocakuşaklar profil fotoğrafı" />
+        </div>
+      </div>
+    </section>
+
+    <section id="hakkimda" class="grid">
+      <div class="col-8 card p24">
+        <h2>Hakkımda</h2>
+        <p>
+          Kısa biyografin: eğitim, ilgi alanların, yaklaşımın. Buraya 5–8 cümlelik bir metin yazabilirsin. Örn:
+          "Üniversità degli Studi di Bergamo'da klinik ve örgütsel psikoloji yüksek lisansı yapıyorum. Çalışmalarımda
+          bilişsel ve davranışsal başa çıkma stratejilerine odaklanıyorum."
+        </p>
+      </div>
+      <aside class="col-4 card p24">
+        <h2>Öne Çıkanlar</h2>
+        <ul class="list">
+          <li class="item"><h3>BDT Odaklı Danışmanlık</h3><p>Yetişkin bireylerle çevrim içi seanslar.</p></li>
+          <li class="item"><h3>Yabancı Dil Kaygısı</h3><p>Araştırma, içerik ve atölyeler.</p></li>
+          <li class="item"><h3>Yazılar</h3><p>Notlar, özetler ve pratik egzersizler.</p></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="calisma" class="card p24" style="margin-top:24px">
+      <h2>Çalışma Alanları</h2>
+      <ul class="list">
+        <li class="item"><h3>Bireysel Danışmanlık</h3><p>BDT ilkeleriyle hedefe yönelik, kanıta dayalı müdahaleler.</p></li>
+        <li class="item"><h3>Performans ve Öğrenme Kaygısı</h3><p>Dil öğrenimi, konuşma kaygısı, sınav/staj süreçleri.</p></li>
+        <li class="item"><h3>Atölye & İçerik</h3><p>Uygulamalı egzersizler ve kısa rehberler.</p></li>
+      </ul>
+    </section>
+
+    <section id="yazilar" class="card p24" style="margin-top:24px">
+      <h2>Yazılar</h2>
+      <p>Yakında… (İstersen buraya Medium/Blog linklerini ekleyebiliriz.)</p>
+    </section>
+
+    <section id="iletisim" class="card p24" style="margin-top:24px">
+      <h2>İletişim</h2>
+      <p>Benimle <a href="mailto:ornek@mail.com">ornek@mail.com</a> adresinden iletişime geçebilirsin. Aşağıdaki sosyal bağlantılardan da ulaşabilirsin.</p>
+      <div class="cta">
+        <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </section>
+
+    <footer>© <span id="yil"></span> Ezgi Kocakuşaklar</footer>
+  </div>
+  <script>document.getElementById('yil').textContent = new Date().getFullYear()</script>
 </body>
 </html>
